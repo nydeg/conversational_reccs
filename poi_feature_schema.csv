@@ -1,0 +1,9 @@
+﻿group,field,type,values,purpose,candidate_evidence
+experience,experience,multi-label,food; culture; walk; entertainment; nightlife,Основной сценарий посещения,категория; описание; OSM tags
+atmosphere,atmosphere,multi-label,cozy; quiet; noisy; romantic; lively; authentic; modern,Настроение и стиль места,описание; editorial_note; в будущем отзывы при наличии источника
+context,context,multi-label,work; family; date; friends; solo; tourists,С кем и в каком контексте посещают место,описание; редакционный текст; структурированные теги
+budget,budget,ordinal,free; low; mid; high,Ограничение по бюджету,wv_price; явные ценовые сведения; осторожный prior по категории
+time,time_slots,multi-label,morning; day; evening; night,Подбор под время суток,"opening_hours; описание; расписание, если доступно"
+practical,has_wifi; has_outdoor; wheelchair_ok,boolean,true; false; unknown,Практические фильтры,internet_access; outdoor_seating; wheelchair
+popularity,popularity,float 0..1,0..1 или unknown,Слабый дополнительный сигнал для ранжирования,n_wiki_links; в будущем — разрешённые агрегированные метрики
+geography,district; lat; lon,category + coordinates,район; широта; долгота,Геопоиск и расстояние,OSM; координаты объекта
